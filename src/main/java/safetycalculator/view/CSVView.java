@@ -35,7 +35,7 @@ public class CSVView extends JFrame {
             assert inputStream != null;
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
 
-                String[] columnNames = {"F", "D", "l₁", "l₂", "Werkstoff", "<html>S<sub>F</sub></html>", ""};
+                String[] columnNames = {"F", "D", "<html>l<sub>1</sub></html>", "<html>l<sub>2</sub></html>", "Werkstoff", "<html>S<sub>F</sub></html>", ""};
 
                 DefaultTableModel tableModel = new DefaultTableModel(columnNames, 0) {
 					@Override

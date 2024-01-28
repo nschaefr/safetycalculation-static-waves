@@ -31,6 +31,7 @@ public class InputWindow extends JFrame {
         setResizable(false);
         setLayout(new BorderLayout());
         setSize(680, 520);
+        getContentPane().setBackground(Color.WHITE);
 
         // Initialisieren der GUI Elemente
         meineRechnungen.add(zeigeRechnungen);
@@ -51,7 +52,7 @@ public class InputWindow extends JFrame {
 
         skizzenPanel = new JPanel(new BorderLayout());
         skizzenPanel.setBackground(Color.WHITE);
-        skizzenPanel.setBorder(BorderFactory.createEmptyBorder(40, 40, 60, 40));
+        skizzenPanel.setBorder(BorderFactory.createEmptyBorder(40, 40, 60, 45));
         ImageIcon imageIcon1 = new ImageIcon(Objects.requireNonNull(StartWindow.class.getResource("/images/skizze-1.png")));
         Image image1 = imageIcon1.getImage().getScaledInstance(320, 140, Image.SCALE_SMOOTH);
         ImageIcon imageIcon2 = new ImageIcon(Objects.requireNonNull(StartWindow.class.getResource("/images/skizze-2.png")));
@@ -118,7 +119,7 @@ public class InputWindow extends JFrame {
 
         JPanel leftPanel = new JPanel(new BorderLayout());
         leftPanel.add(skizzenPanel, BorderLayout.CENTER);
-
+        
         JPanel rightPanel = new JPanel(new BorderLayout());
         rightPanel.setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.LIGHT_GRAY));
         rightPanel.add(eingabePanel, BorderLayout.NORTH);
@@ -127,6 +128,7 @@ public class InputWindow extends JFrame {
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.add(leftPanel, BorderLayout.WEST);
         mainPanel.add(rightPanel, BorderLayout.EAST);
+        mainPanel.setBackground(Color.WHITE);
 
         add(mainPanel, BorderLayout.CENTER);
     }
