@@ -1,6 +1,8 @@
 package safetycalculator.model;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 public class CalculationModel {
     // 0 = F, 1 = D, 2 = l_1, 3 = l_2
@@ -98,7 +100,8 @@ public class CalculationModel {
     // Erstellt eine CSV-Repräsentation des Models
     public String speichereCSV() {
         StringBuilder csv = new StringBuilder();
-        DecimalFormat decimalFormat = new DecimalFormat("#.#");
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+        DecimalFormat decimalFormat = new DecimalFormat("#.#", symbols);
 
         // Fügt die Parameter zur CSV hinzu
         for (double parameter : parameters) {

@@ -9,6 +9,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 @SuppressWarnings("serial")
 public class CalculationWindow extends JFrame {
@@ -45,7 +47,8 @@ public class CalculationWindow extends JFrame {
         text.setFont(new Font("Dialog", Font.BOLD, 17));
         text.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 20));
 
-        DecimalFormat decimalFormat = new DecimalFormat("#.#");
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+        DecimalFormat decimalFormat = new DecimalFormat("#.#", symbols);
 
         maxBiegespannung = new JLabel("Maximale Biegespannung");
         maxBiegespannung.setFont(new Font("Dialog", Font.BOLD, 13));

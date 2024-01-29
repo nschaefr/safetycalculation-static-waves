@@ -57,8 +57,8 @@ public class InputWindow extends JFrame {
         Image image1 = imageIcon1.getImage().getScaledInstance(320, 140, Image.SCALE_SMOOTH);
         ImageIcon imageIcon2 = new ImageIcon(Objects.requireNonNull(StartWindow.class.getResource("/images/skizze-2.png")));
         Image image2 = imageIcon2.getImage().getScaledInstance(220, 160, Image.SCALE_SMOOTH);
-        skizzenPanel.add(new JLabel(new ImageIcon(image1)), BorderLayout.NORTH); // Passe den Pfad an
-        skizzenPanel.add(new JLabel(new ImageIcon(image2)), BorderLayout.SOUTH); // Passe den Pfad an
+        skizzenPanel.add(new JLabel(new ImageIcon(image1)), BorderLayout.NORTH);
+        skizzenPanel.add(new JLabel(new ImageIcon(image2)), BorderLayout.SOUTH);
 
         eingabePanel = new JPanel(new GridBagLayout());
         GridBagConstraints gbcLabel = new GridBagConstraints();
