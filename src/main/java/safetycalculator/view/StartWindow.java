@@ -57,9 +57,9 @@ public class StartWindow extends JFrame {
             }
         });
 
-        nameLabel = new JLabel("Vin Kristan");
+        nameLabel = new JLabel("Schäfer Nils");
         nameLabel.setFont(new Font("Dialog", Font.BOLD, 16));
-        nameLabel2 = new JLabel("Felix Nolte");
+        nameLabel2 = new JLabel("SWE-Projekt");
         nameLabel2.setFont(new Font("Dialog", Font.BOLD, 16));
 
         JPanel namePanel = new JPanel(new BorderLayout());
