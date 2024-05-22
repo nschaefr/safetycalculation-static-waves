@@ -1,2 +1,2 @@
 # SafetyCalculationStaticWaves
-SafetycalculationStaticWaves ist eine Full-Java Anwendung zur Berechnung und Überprüfung der Sicherheit für statisch beanspruchte Wellen.
+SafetycalculationStaticWaves ist eine dem **MVC-Pattern** entsprechende Java-Anwendung zur Berechnung und Überprüfung der Sicherheit für statisch beanspruchte Wellen.
